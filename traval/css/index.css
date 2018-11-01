@@ -1,0 +1,128 @@
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.myHeader {
+  background-color: #dcdbdb;
+}
+.myHeader a {
+  color: #b8860b;
+}
+.myHeader .more {
+  color: #b8860b;
+  font-size: 16px;
+  line-height: 30px;
+}
+.myHeader h1 {
+  color: #b8860b;
+}
+.footer {
+  background-color: #dcdbdb;
+}
+.footer .mui-tab-item.mui-active {
+  color: #b8860b;
+}
+.myContent .content_img {
+  background-color: #fff;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 68px;
+  background: url("../images/logo.jpg") center center no-repeat;
+  background-size: cover;
+}
+.myContent .mui-slider .mui-slider-indicator .mui-indicator.mui-active {
+  background-color: #b8860b;
+}
+.myContent .mbody {
+  background-color: #fff;
+  padding-top: 15px;
+}
+.myContent .mbody ul li {
+  float: left;
+  text-align: center;
+  height: 115px;
+  width: 33.33%;
+}
+.myContent .mbody ul li a {
+  display: inline-block;
+  width: 80px;
+  height: 80px;
+}
+.myContent .mbody ul li a img {
+  width: 100%;
+}
+.myContent .mbody ul li p {
+  height: 25px;
+  line-height: 25px;
+}
+.myContent .aboutMe {
+  padding: 0 5px;
+  background-color: #dcdbdb;
+}
+.myContent .aboutMe a {
+  color: #b8860b;
+  font-size: 14px;
+  line-height: 35px;
+  height: 35px;
+}
+.myContent .MoBodyM {
+  background-color: #fff;
+}
+.myContent .MoBodyM img {
+  padding: 8px 5px;
+  height: 177px;
+  width: 100%;
+}
+.myContent .MoBodyM .text {
+  padding: 0 5px;
+}
+.myContent .MoBodyM .text p {
+  font-size: 14px;
+  font-family: "arial", "å¾®è½¯é›…é»‘", "Microsoft YaHei";
+}
+.myContent .MoBodyM .text p:last-of-type {
+  margin-bottom: 0;
+  padding-bottom: 10px;
+}
+.myContent .rizhi .myUl {
+  padding-bottom: 15px;
+}
+.myContent .rizhi .myUl li {
+  overflow: hidden;
+  position: relative;
+  padding: 15px 10px 0 10px;
+  height: 115px;
+}
+.myContent .rizhi .myUl li a {
+  display: block;
+}
+.myContent .rizhi .myUl li a img {
+  display: block;
+  width: 100px;
+  height: 100px;
+  min-width: 100px;
+}
+.myContent .rizhi .myUl li a .myText {
+  color: #545454;
+}
+.myContent .rizhi .myUl li a .myText p {
+  height: 86px;
+  margin-top: 5px;
+  line-height: 21px;
+  overflow: hidden;
+  margin-bottom: 0;
+}
+.myContent .huace {
+  background-color: #fff;
+  text-align: center;
+}
+.myContent .huace ul li {
+  float: left;
+  width: 50%;
+  padding: 10px 15px;
+}
+.myContent .huace ul li img {
+  width: 100%;
+}

@@ -1,0 +1,25 @@
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  .myHeader {
+    background-color: #dcdbdb;
+  }
+  .myHeader a {
+    color: #b8860b;
+  }
+  .myHeader .more {
+    color: #b8860b;
+    font-size: 16px;
+    line-height: 30px;
+  }
+  .myHeader h1 {
+    color: #b8860b;
+  }
+  .footer {
+    background-color: #dcdbdb;
+  }
+  .footer .mui-tab-item.mui-active {
+    color: #b8860b;
+  }
