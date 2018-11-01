@@ -1,6 +1,5 @@
 # 项目描述
 + 旅行的意义，是一个为用户旅游提供更好服务的手机端网站
-	https://github.com/Yuecao8/cy_repository.git
 # 责任描述
 + 1.使用html+css技术、 mui框架以及font-awesome字体图标实现基本静态页面，满足不同手机终端的适配，使用less编译css样式；
 + 2.利用mui框架实现首页轮播图的效果，在'日志'模块，使用mui的图文列表框架完成页面的布局，使用css改变其样式；
