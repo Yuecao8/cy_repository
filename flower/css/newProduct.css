@@ -1,0 +1,176 @@
+.content .content_top {
+  position: relative;
+  width: 100%;
+  height: 420px;
+  background: url(../images/newPro.jpg) center center no-repeat;
+  margin-top: -20px;
+}
+.content .content_top .new {
+  position: absolute;
+  top: 60px;
+  left: 290px;
+  width: 196px;
+  height: 293px;
+  background: url(../images/newPro2.jpg) center center no-repeat;
+}
+.content .content_top .new .left,
+.content .content_top .new .right {
+  text-align: center;
+  font-size: 30px;
+  color: #ffffff;
+  font-family: 'å®‹ä½“', 'simsun';
+}
+.content .content_top .new .left span,
+.content .content_top .new .right span {
+  display: inline-block;
+  font-size: 60px;
+  font-weight: 900;
+}
+.content .content_top .new .left span {
+  position: absolute;
+  top: 30px;
+  left: 46px;
+}
+.content .content_top .new .left b {
+  position: absolute;
+  top: 30px;
+  left: 120px;
+}
+.content .content_top .new .right span {
+  position: absolute;
+  top: 120px;
+  left: 95px;
+}
+.content .content_top .new .right b {
+  position: absolute;
+  top: 154px;
+  left: 54px;
+}
+.content .content_top .new .bottom {
+  text-align: center;
+  width: 186px;
+  height: 52px;
+  position: relative;
+  top: 226px;
+  left: 0;
+  color: #ffffff;
+}
+.content .content_top .new .bottom p {
+  font-family: "宋体", simsun;
+  font-size: 22px;
+  line-height: 22px;
+}
+.content .content_top .new .bottom h2 {
+  font-size: 12px;
+  font-family: Arial;
+  line-height: 0;
+}
+.content .content_style {
+  overflow: hidden;
+  text-align: center;
+}
+.content .content_style .title {
+  padding: 20px 0;
+  font-weight: 400;
+}
+.content .content_style .title .chinese {
+  color: #333333;
+  font-size: 30px;
+  background-color: transparent;
+}
+.content .content_style .title .english {
+  font-family: Arial;
+  color: #808080;
+  font-size: 18px;
+}
+.content .content_style .features ul {
+  overflow: hidden;
+}
+.content .content_style .features ul li {
+  float: left;
+  position: relative;
+  margin-left: 20px;
+  width: 280px;
+  margin-bottom: 10px;
+}
+.content .content_style .features ul li img {
+  width: 100%;
+}
+.content .content_style .features ul li .propList .lingjuan {
+  display: inline-block;
+  position: absolute;
+  left: 0;
+  width: 42px;
+  height: 25px;
+  background: url("../images/vbg01.png") -1298px -846px;
+}
+.content .content_style .features ul li .propList .proDetail {
+  width: 236px;
+  display: inline-block;
+  margin-left: 44px;
+  font-style: 14px;
+  font-weight: 400;
+  line-height: 26px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.content .content_style .features ul li .proPrice .price {
+  line-height: 30px;
+  color: #f13a3a;
+  margin-right: 8px;
+  font-weight: 400;
+  font-size: 16px;
+}
+.content .content_style .features ul li .proPrice .price span {
+  font-size: 10px;
+}
+.content .content_style .features ul li .proPrice .price .old {
+  color: #808080;
+  text-decoration: line-through;
+}
+.content .content_style .features ul li .proPrice .btn_buy {
+  width: 88px;
+  height: 30px;
+  background-color: #f13a3a;
+  border-radius: 5px;
+  color: #fff;
+  margin-left: 90px;
+  line-height: 29px;
+}
+.content .content_style .features ul li::before {
+  content: "?9?";
+  padding: 0 5px;
+  height: 20px;
+  background-color: #f13a3a;
+  color: #fff;
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-weight: 400;
+}
+.content .content_style .features ul li:nth-of-type(4)::before {
+  content: "?100?9";
+}
+.content .content_style .lunbotu {
+  padding: 0 20px;
+}
+.content .content_style .lunbotu img {
+  width: 40%;
+  float: left;
+  margin-left: 8%;
+}
+.content .content_style .lunbotu #right {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 1175px;
+  width: 15%;
+  font-size: 20px;
+  color: #fff;
+  text-align: center;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.6);
+  background-color: rgba(0, 0, 0, 0);
+  filter: alpha(opacity=50);
+  opacity: .5;
+}

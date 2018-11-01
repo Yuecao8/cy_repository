@@ -1,0 +1,653 @@
+<!-- <?php
+    $str = file_get_contents('./tab.json');
+    $arr = json_decode($str,true);
+
+    // print_r($arr);
+?> -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="./assets/jquery/jquery.min.js"></script>
+    <link rel="stylesheet" href="./assets/bootstrap/css/bootstrap.css">
+    <script src="./assets/bootstrap/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="./assets/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./css/index.css">
+    <title>花开半夏</title>
+</head>
+<body>
+    <div class="header">
+        <div class="header_top w">
+            <div class="title">
+                <b>
+                    <span>花开</span><span>半夏</span>
+                </b>
+            </div>
+            <div class="search">
+                <input type="text" placeholder="简欧共艺 品质生活">
+                <span class="glyphicon glyphicon-search"></span>
+                <div class="link">
+                    <a href="javascript:;">仿真花</a>
+                    <a href="javascript:;">仿真花套装</a>
+                    <a href="javascript:;">花瓶</a>
+                    <a href="javascript:;">玫瑰花</a>
+                </div>
+            </div>
+            <div class="cart">
+                <span><i class="fa fa-shopping-cart"></i></span>
+                <a href="javascript:;">购物车</a>
+                <div class="shoppingList">
+                    <div class="font">
+                        <i class="fa fa-shopping-cart"></i>
+                    </div>
+                    <div class="text">
+                        <p>您的购物车内暂时没有任何产品。</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="header_nav w">
+            <nav class="navbar navbar-default">
+                <div class="container-fluid">
+                    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                        <ul class="nav navbar-nav myNav">
+                            <li class="dropdown myDropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+                                    aria-expanded="false">商品分类
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="#">仿真花</a></li>
+                                    <li><a href="#">花束</a></li>
+                                    <li><a href="#">绿植/肉植</a></li>
+                                    <li><a href="#">果实</a></li>
+                                    <li><a href="#">绢花</a></li>
+                                    <li><a href="#">婚庆花艺</a></li>
+                                    <li><a href="#">干花</a></li>
+
+                                </ul>
+                            </li>
+                            <!-- <?php foreach ($arr as $value){ ?>
+                            <li class="<?php echo $value['id']==1?'active':'' ?>"><a href="common.php?id=<?php echo $value['id'] ?>"><?php echo $value['title'] ?></a></li>
+                            <?php } ?> -->
+                            <li class="active"><a href="index.html">首页</a></li>
+                            <li><a href="product.html">所有商品</a></li>
+                            <li><a href="newProduct.html">新品上市</a></li>
+                            <li><a href="selectedProduct.html">精选产品</a></li>
+                            <li><a href="customized.html">定制专区</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </div>
+    <div class="content">
+        <div id="carousel-example-generic" class="carousel slide myLunbo" data-ride="carousel">
+            <div class="carousel-inner" role="listbox">
+                <div class="item active">
+                    <img src="./images/1.jpg" alt="...">
+                    <div class="carousel-caption">
+                        <div class="first">
+                            <span style="line-height: 34px;">
+                                <div class="first_live">
+                                    L I F E
+                                </div>
+                                <div class="first_box">
+                                    <b>创造生活的仪式感</b>
+                                </div>
+                                <div style="text-align: center;">
+                                    <font color="#745134" face="宋体, SimSun">
+                                        <span style="font-size: 14px;">简欧 · 享受家居慢生活！</span>
+                                    </font>
+                                    <b style="color: rgb(116, 81, 52); font-family: 宋体, simsun; font-size: 26px;"><br>
+                                    </b>
+                                </div>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="./images/2.jpg" alt="...">
+                    <div class="carousel-caption">
+                        <div class="second">
+                            <b style="color: rgb(140, 140, 140);">
+                                <span style="color: rgb(230, 23, 80);">MAKE</span><br>
+                                A&nbsp;&nbsp;SENSE<br>
+                                OF<br>
+                                <span style="color: rgb(230, 23, 80);">LIFE.</span>
+                                </br>
+                        </div>
+                        <span style="font-size: 36px; color:#e61750;font-weight: 400">
+                            创造生活的仪式感
+                        </span>
+                        <div style="color: rgb(140, 140, 140);font-weight: 400;font-size: 20px">
+                            享受家居慢生活！
+                        </div>
+                        <a href="#" class="jianou">简欧&nbsp;·&nbsp;生活馆</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Controls -->
+            <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+                <span class="glyphicon glyphicon-menu-left" aria-hidden="true"></span>
+                <!-- <span class="sr-only">Previous</span> -->
+            </a>
+            <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+                <span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span>
+                <!-- <span class="sr-only">Next</span> -->
+            </a>
+        </div>
+    </div>
+    <div class="aside">
+        <div class="content_style w">
+            <div class="title">
+                <p class="chinese">优雅 · 格调</p>
+                <p class="english">ELEGANT · STYLE</p>
+            </div>
+            <ul class="img">
+                <li>
+                    <a href="javascript">
+                        <img src="./images/product1.jpg" alt="">
+                        <div class="text_box">
+                            <h5>
+                                <span>—</span>
+                                北欧尤加利叶子
+                                <span>—</span>
+                            </h5>
+                            <p>添一点绿意</p>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="javascript">
+                        <img src="./images/product2.jpg" alt="">
+                        <div class="text_box">
+                            <h5>
+                                <span>—</span>
+                                北欧唯美玉兰仿真花
+                                <span>—</span>
+                            </h5>
+                            <p>片片精巧的瓣</p>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="javascript">
+                        <img src="./images/product3.jpg" alt="">
+                        <div class="text_box">
+                            <h5>
+                                <span>—</span>
+                                火红的柿子
+                                <span>—</span>
+                            </h5>
+                            <p>一盏盏红红的小灯笼</p>
+                        </div>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="content_qq w">
+            <div class="qq_left">
+                <h5>客服中心</h5>
+                <p>CUSTOMER SERVICE</p>
+            </div>
+            <div class="qq_center">
+                <div class="text_time">
+                    <h5>售前服务</h5>
+                    <p>10:00-22:00</p>
+                </div>
+                <div class="qq_logo">
+                    <a href="#"><i class="fa fa-qq" aria-hidden="true"></i></a>
+                    <a href="#"><i class="fa fa-qq" aria-hidden="true"></i></a>
+                    <a href="#"><i class="fa fa-qq" aria-hidden="true"></i></a>
+                    <a href="#"><i class="fa fa-qq" aria-hidden="true"></i></a>
+                </div>
+            </div>
+            <div class="qq_right">
+                <div class="text_time">
+                    <h5>售后服务</h5>
+                    <p>10:00-22:00</p>
+                </div>
+                <div class="qq_logo">
+                    <a href="#"><i class="fa fa-qq" aria-hidden="true"></i></a>
+                    <a href="#"><i class="fa fa-qq" aria-hidden="true"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="content_youhui w">
+            <div class="coupon_content_new">
+                <div class="couponLeftInfo">
+                    <div class="couponTopInfo">
+                        <div class="price">
+                            <span class="priceSign">￥</span>
+                            <span class="savePrice">100</span>
+                        </div>
+                        <span class="conditionContainer">
+                            满5000用
+                        </span>
+                    </div>
+                    <div class="couponBottomInfo">店铺优惠</div>
+                </div>
+                <div class="couponRightInfo">
+                    立即领取
+                </div>
+            </div>
+            <div class="coupon_content_new">
+                <div class="couponLeftInfo">
+                    <div class="couponTopInfo">
+                        <div class="price">
+                            <span class="priceSign">￥</span>
+                            <span class="savePrice">100</span>
+                        </div>
+                        <span class="conditionContainer">
+                            满5000用
+                        </span>
+                    </div>
+                    <div class="couponBottomInfo">店铺优惠</div>
+                </div>
+                <div class="couponRightInfo">
+                    立即领取
+                </div>
+            </div>
+            <div class="coupon_content_new">
+                <div class="couponLeftInfo">
+                    <div class="couponTopInfo">
+                        <div class="price">
+                            <span class="priceSign">￥</span>
+                            <span class="savePrice">100</span>
+                        </div>
+                        <span class="conditionContainer">
+                            满5000用
+                        </span>
+                    </div>
+                    <div class="couponBottomInfo">店铺优惠</div>
+                </div>
+                <div class="couponRightInfo">
+                    立即领取
+                </div>
+            </div>
+            <div class="coupon_content_new">
+                <div class="couponLeftInfo">
+                    <div class="couponTopInfo">
+                        <div class="price">
+                            <span class="priceSign">￥</span>
+                            <span class="savePrice">100</span>
+                        </div>
+                        <span class="conditionContainer">
+                            满5000用
+                        </span>
+                    </div>
+                    <div class="couponBottomInfo">店铺优惠</div>
+                </div>
+                <div class="couponRightInfo">
+                    立即领取
+                </div>
+            </div>
+        </div>
+        <div class="content_style">
+            <div class="title">
+                <p class="chinese">精选好货 · 热卖清单</p>
+                <p class="english">FEATURED GOOD GOODS · HOT LIST</p>
+            </div>
+            <div class="bigProduct">
+                <ul>
+                    <li>
+                        <a href="javascript" class="fl">
+                            <img src="./images/bigProduct1.jpg" alt="">
+                        </a>
+                        <div class="imgDetail fl">
+                            <p>轻轻摇曳着一枝悠闲</p>
+                            <h3>安娜公主仿真花束</h3>
+                            <div><img src="./images/flowes_line.png" alt=""></div>
+                            <h5>留一朵盛放的大丽花在心间</h5>
+                            <div class="rmb">
+                                RMB
+                                <span>28.</span>
+                                00
+                            </div>
+                            <div class="buy_now">
+                                立即购买
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="javascript" class="fr">
+                            <img src="./images/bigProduct1.jpg" alt="">
+                        </a>
+                        <div class="imgDetail fr">
+                            <p>轻轻摇曳着一枝悠闲</p>
+                            <h3>安娜公主仿真花束</h3>
+                            <div>
+                                <img src="./images/flowes_line.png" alt="">
+                            </div>
+                            <h5>留一朵盛放的大丽花在心间</h5>
+                            <div class="rmb">
+                                RMB
+                                <span>28.</span>
+                                00
+                            </div>
+                            <div class="buy_now">
+                                立即购买
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="javascript" class="fl">
+                            <img src="./images/bigProduct1.jpg" alt="">
+                        </a>
+                        <div class="imgDetail fl">
+                            <p>轻轻摇曳着一枝悠闲</p>
+                            <h3>安娜公主仿真花束</h3>
+                            <div>
+                                <img src="./images/flowes_line.png" alt="">
+                            </div>
+                            <h5>留一朵盛放的大丽花在心间</h5>
+                            <div class="rmb">
+                                RMB
+                                <span>28.</span>
+                                00
+                            </div>
+                            <div class="buy_now">
+                                立即购买
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="content_style">
+            <div class="title">
+                <p class="chinese">特色 · 有好货</p>
+                <p class="english">FEATURES · GOOD PRODUCTS</p>
+            </div>
+            <div class="features">
+                <ul>
+                    <li>
+                        <a href="javascript">
+                            <img src="./images/FEATURES1.jpg" alt="">
+                        </a>
+                        <div class="propList">
+                            <span class="lingjuan"></span>
+                            <span class="proDetail">ins保湿手感马蹄莲仿真花单支客厅摆件绢花假花艺</span>
+                        </div>
+                        <div class="proPrice">
+                            <div class="price fl">
+                                <span>￥</span>
+                                3
+                                <span>.51</span>
+                                <span class="old">3.90</span>
+                            </div>
+                            <div class="btn_buy fr">
+                                立即购买
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="javascript">
+                            <img src="./images/FEATURES2.jpg" alt="">
+                        </a>
+                        <div class="propList">
+                            <span class="lingjuan"></span>
+                            <span class="proDetail">ins保湿手感马蹄莲仿真花单支客厅摆件绢花假花艺</span>
+                        </div>
+                        <div class="proPrice">
+                            <div class="price fl">
+                                <span>￥</span>
+                                3
+                                <span>.51</span>
+                                <span class="old">3.90</span>
+                            </div>
+                            <div class="btn_buy fr">
+                                立即购买
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="javascript">
+                            <img src="./images/FEATURES3.jpg" alt="">
+                        </a>
+                        <div class="propList">
+                            <span class="lingjuan"></span>
+                            <span class="proDetail">ins保湿手感马蹄莲仿真花单支客厅摆件绢花假花艺</span>
+                        </div>
+                        <div class="proPrice">
+                            <div class="price fl">
+                                <span>￥</span>
+                                3
+                                <span>.51</span>
+                                <span class="old">3.90</span>
+                            </div>
+                            <div class="btn_buy fr">
+                                立即购买
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="javascript">
+                            <img src="./images/FEATURES4.jpg" alt="">
+                        </a>
+                        <div class="propList">
+                            <span class="lingjuan"></span>
+                            <span class="proDetail">ins保湿手感马蹄莲仿真花单支客厅摆件绢花假花艺</span>
+                        </div>
+                        <div class="proPrice">
+                            <div class="price fl">
+                                <span>￥</span>
+                                3
+                                <span>.51</span>
+                                <span class="old">3.90</span>
+                            </div>
+                            <div class="btn_buy fr">
+                                立即购买
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="javascript">
+                            <img src="./images/FEATURES1.jpg" alt="">
+                        </a>
+                        <div class="propList">
+                            <span class="lingjuan"></span>
+                            <span class="proDetail">ins保湿手感马蹄莲仿真花单支客厅摆件绢花假花艺</span>
+                        </div>
+                        <div class="proPrice">
+                            <div class="price fl">
+                                <span>￥</span>
+                                3
+                                <span>.51</span>
+                                <span class="old">3.90</span>
+                            </div>
+                            <div class="btn_buy fr">
+                                立即购买
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="javascript">
+                            <img src="./images/FEATURES2.jpg" alt="">
+                        </a>
+                        <div class="propList">
+                            <span class="lingjuan"></span>
+                            <span class="proDetail">ins保湿手感马蹄莲仿真花单支客厅摆件绢花假花艺</span>
+                        </div>
+                        <div class="proPrice">
+                            <div class="price fl">
+                                <span>￥</span>
+                                3
+                                <span>.51</span>
+                                <span class="old">3.90</span>
+                            </div>
+                            <div class="btn_buy fr">
+                                立即购买
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="javascript">
+                            <img src="./images/FEATURES3.jpg" alt="">
+                        </a>
+                        <div class="propList">
+                            <span class="lingjuan"></span>
+                            <span class="proDetail">ins保湿手感马蹄莲仿真花单支客厅摆件绢花假花艺</span>
+                        </div>
+                        <div class="proPrice">
+                            <div class="price fl">
+                                <span>￥</span>
+                                3
+                                <span>.51</span>
+                                <span class="old">3.90</span>
+                            </div>
+                            <div class="btn_buy fr">
+                                立即购买
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="javascript">
+                            <img src="./images/FEATURES4.jpg" alt="">
+                        </a>
+                        <div class="propList">
+                            <span class="lingjuan"></span>
+                            <span class="proDetail">ins保湿手感马蹄莲仿真花单支客厅摆件绢花假花艺</span>
+                        </div>
+                        <div class="proPrice">
+                            <div class="price fl">
+                                <span>￥</span>
+                                3
+                                <span>.51</span>
+                                <span class="old">3.90</span>
+                            </div>
+                            <div class="btn_buy fr">
+                                立即购买
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <div class="footer_top w">
+            <ul>
+                <li>
+                    <img src="./images/sheng.png" alt="">
+                    <div class="text">
+                        <p class="big">平均优惠10个点</p>
+                        <p>100000+高性价比商品</p>
+                    </div>
+                </li>
+                <li>
+                    <img src="./images/zhi.png" alt="">
+                    <div class="text">
+                        <p class="big">平均优惠10个点</p>
+                        <p>100000+高性价比商品</p>
+                    </div>
+                </li>
+                <li>
+                    <img src="./images/bao.png" alt="">
+                    <div class="text">
+                        <p class="big">平均优惠10个点</p>
+                        <p>100000+高性价比商品</p>
+                    </div>
+                </li>
+                <li>
+                    <img src="./images/mian.png" alt="">
+                    <div class="text">
+                        <p class="big">平均优惠10个点</p>
+                        <p>100000+高性价比商品</p>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div class="bottom w">
+            <ul>
+                <li class="title fl">
+                    <h3>服务保障</h3>
+                    <ol>
+                        <li>
+                            <a href="#">正品保证</a>
+                        </li>
+                        <li>
+                            <a href="#">7天无理由退换</a>
+                        </li>
+                        <li>
+                            <a href="#">退货返运费</a>
+                        </li>
+                        <li>
+                            <a href="#">7X15小时客户服务</a>
+                        </li>
+                    </ol>
+                </li>
+                <li class="title fl">
+                    <h3>支付方式</h3>
+                    <ol>
+                        <li>
+                            <a href="#">公司转账</a>
+                        </li>
+                        <li>
+                            <a href="#">货到付款</a>
+                        </li>
+                        <li>
+                            <a href="#">在线支付</a>
+                        </li>
+                        <li>
+                            <a href="#">分期付款</a>
+                        </li>
+                    </ol>
+                </li>
+                <li class="title fl">
+                    <h3>商家服务</h3>
+                    <ol>
+                        <li>
+                            <a href="#">正品保证</a>
+                        </li>
+                        <li>
+                            <a href="#">7天无理由退换</a>
+                        </li>
+                        <li>
+                            <a href="#">退货返运费</a>
+                        </li>
+                        <li>
+                            <a href="#">7X15小时客户服务</a>
+                        </li>
+                    </ol>
+                </li>
+                <li class="title fl">
+                    <h3>物流配送</h3>
+                    <ol>
+                        <li>
+                            <a href="#">正品保证</a>
+                        </li>
+                        <li>
+                            <a href="#">7天无理由退换</a>
+                        </li>
+                        <li>
+                            <a href="#">退货返运费</a>
+                        </li>
+                        <li>
+                            <a href="#">7X15小时客户服务</a>
+                        </li>
+                    </ol>
+                </li>
+                <li class="phone fl">
+                    <h3>客服热线</h3>
+                    <p><strong>000-0000000</strong></p>
+                </li>
+                <li class="more fl">
+                    <p>了解更多</p>
+                    <img src="./images/qrCode.png" alt="">
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="footer_bottom">
+            <p>©2018 网站模板—鲜花植物 版权所有</p>
+    </div>
+</body>
+<script>
+</script>
+
+</html>

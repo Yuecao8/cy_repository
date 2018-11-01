@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        ul{
+            text-align: center;
+            position: relative;
+        }
+        ul li{
+            list-style: none;
+            width: 80px;
+            height: 50px;
+            background-color: blue;
+            float: left;
+            margin-left: 10px;
+        }
+        .box{
+            position: absolute;
+            width: 80px;
+            height: 50px;
+            background-color: blueviolet;
+            left: 50px;
+            top:50px;
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <ul>
+        <li>1 <div class="box">这是第1个</div></li>
+        <li>2 <div class="box">这是第2个</div></li>
+        <li>3 <div class="box">这是第3个</div></li>
+    </ul>
+</body>
+<script>
+    var lis = document.getElementsByTagName('li');
+    var box = document.getElementsByClassName('box');
+    for(var i = 0;i<lis.length;i++){
+        let li = lis[i];
+        li.onclick = function(){
+            console.log(this.children[0]);
+            this.children[0].
+            this.children[0].style.display = 'block'
+        }
+    }
+</script>
+</html>
