@@ -1,6 +1,5 @@
 # 项目描述
 - 花开半夏，是一个电商类花束网站。
-    https://github.com/Yuecao8/cy_repository.git
 # 责任描述
 + 1.精确还原设计图，使用html+css技术、 bootstrap框架以及font-awesome字体图标实现基本静态页面；
 + 2.利用bootstrap框架完成首页轮播图的效果，页面使用css3过渡属性，实现有好的页面特效，并配合js、jquery等完成页面特效；
